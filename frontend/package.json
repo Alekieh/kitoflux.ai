@@ -1,0 +1,25 @@
+{
+  "name": "kitoflux-ai-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KITOFLUX.AI - Real-time invisible AI copilot for high-stakes dialogues",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite\" \"wait-on tcp:5173 && electron .\"",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "concurrently": "^8.2.2",
+    "electron": "^29.1.5",
+    "vite": "^5.1.6",
+    "wait-on": "^7.2.0"
+  }
+}
