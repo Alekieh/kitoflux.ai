@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+backend/venv/
+__pycache__/
+*.pyc
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# Local databases & logs
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# Environment variables
+.env
+backend/.env
